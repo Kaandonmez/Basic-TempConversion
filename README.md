@@ -16,7 +16,10 @@ Fahrenheit to Kelvin	K = 5/9 (° F - 32) + 273
 
 NOTE: If you you are trying to multiply/divide between integer and floating point number in C# project, you need to put "f" character to it's end. (int) => (float)  
 
-Ex.
+Example
 
-F = 9/5f (C) + 32 || F = 9f/5 (C) + 32
+F = 9/5f (C) + 32
 
+or..
+
+F = 9f/5 (C) + 32

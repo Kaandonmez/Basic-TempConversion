@@ -14,4 +14,9 @@ Kelvin to Celsius	° C = K - 273
 Fahrenheit to Kelvin	K = 5/9 (° F - 32) + 273
 
 
-NOTE: If you you are trying to multiply/divide integer and floating poin number in C# project, you need to put "f" one of the (int) multiplier/divider . 
+NOTE: If you you are trying to multiply/divide between integer and floating point number in C# project, you need to put "f" character to it's end. (int) => (float)  
+
+Ex.
+
+F = 9/5f (C) + 32 || F = 9f/5 (C) + 32
+

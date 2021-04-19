@@ -20,7 +20,10 @@ namespace TempConversion
         private void btn_cel_Click(object sender, EventArgs e)
         {
             float c = 0;
-            c = float.Parse(txt_cel.Text);
+
+            try { c = float.Parse(txt_cel.Text); }
+            catch { MessageBox.Show("Only numbers are allowed"); }
+            
 
             //Celcius To Fah
             float f = 9 / 5f * c + 32;
@@ -34,7 +37,9 @@ namespace TempConversion
         private void btn_fah_Click(object sender, EventArgs e)
         {
             float f = 0;
-            f = float.Parse(txt_fah.Text);
+            
+            try { f = float.Parse(txt_fah.Text); }
+            catch { MessageBox.Show("Only numbers are allowed"); }
 
             //Fah to Celcius
             float c = 5 / 9f * (f - 32);
@@ -50,7 +55,9 @@ namespace TempConversion
         private void btn_kelv_Click(object sender, EventArgs e)
         {
             float k = 0;
-            k = float.Parse(txt_kelv.Text);
+            
+            try { k = float.Parse(txt_kelv.Text);}
+            catch { MessageBox.Show("Only numbers are allowed"); }
 
             //Kelvin To Celcius
             float c = k - 273;
